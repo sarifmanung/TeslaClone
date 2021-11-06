@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Container>
-      <a style={{cursor:"pointer"}}>
+      <a style={{ cursor: "pointer" }}>
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
@@ -91,6 +91,10 @@ function Header() {
         <li>
           {" "}
           <a href="#">Test Drive</a>{" "}
+        </li>
+        <li>
+          {" "}
+          <a href="#">Contag us</a>{" "}
         </li>
       </BurgerNav>
       {/* </RemoveScroll> */}
@@ -181,7 +185,7 @@ const BurgerNav = styled.div`
   text-align: start;
 
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 
   overflow-y: scroll;
 
