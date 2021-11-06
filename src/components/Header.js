@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Container>
-      <a style={{ cursor: "pointer" }}>
+      <a style={{ cursor: "none" }}>
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
