@@ -105,7 +105,6 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  position: fixed;
   min-height: 60px;
   display: flex;
   align-items: center;

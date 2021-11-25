@@ -15,6 +15,7 @@
 body{
 	width: 100%;
 	overflow-x: hidden;
+	
 }
 body.hideScroll{
 	overflow: hidden;
