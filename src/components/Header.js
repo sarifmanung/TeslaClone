@@ -21,83 +21,85 @@ function Header() {
     <Container>
       <a style={{ cursor: "pointer" }}>
         <img src="/images/logo.svg" alt="" />
-      </a>
+      </a>{" "}
       <Menu>
+        {" "}
         {cars &&
           cars.map((car, index) => (
             <a key={index} href="#">
-              {car}
+              {" "}
+              {car}{" "}
             </a>
-          ))}
-      </Menu>
+          ))}{" "}
+      </Menu>{" "}
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
-        <CustomMenu onClick={changeBurgerStatus} />
-      </RightMenu>
-      {/* <RemoveScroll> */}
+        <a href="#"> Shop </a> <a href="#"> Tesla Account </a>{" "}
+        <CustomMenu onClick={changeBurgerStatus} />{" "}
+      </RightMenu>{" "}
+      {/* <RemoveScroll> */}{" "}
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose onClick={changeBurgerStatus} />
-        </CloseWrapper>
+          <CustomClose onClick={changeBurgerStatus} />{" "}
+        </CloseWrapper>{" "}
         {cars &&
           cars.map((car, index) => (
             <li>
               <a key={index} href="#">
-                {car}
-              </a>
+                {" "}
+                {car}{" "}
+              </a>{" "}
             </li>
-          ))}
+          ))}{" "}
         <li>
           {" "}
-          <a href="#">Existing Inventory</a>{" "}
-        </li>
+          <a href="#"> Existing Inventory </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Used Inventory</a>{" "}
-        </li>
+          <a href="#"> Used Inventory </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Trade-in</a>{" "}
-        </li>
+          <a href="#"> Trade - in </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Cybertruck</a>{" "}
-        </li>
+          <a href="#"> Cybertruck </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Roadster</a>{" "}
-        </li>
+          <a href="#"> Roadster </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Semi</a>{" "}
-        </li>
+          <a href="#"> Semi </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Charging</a>{" "}
-        </li>
+          <a href="#"> Charging </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Power</a>{" "}
-        </li>
+          <a href="#"> Power </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Components</a>{" "}
-        </li>
+          <a href="#"> Components </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Utilities</a>{" "}
-        </li>
+          <a href="#"> Utilities </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Test Drive</a>{" "}
-        </li>
+          <a href="#"> Test Drive </a>{" "}
+        </li>{" "}
         <li>
           {" "}
-          <a href="#">Contag us</a>{" "}
-        </li>
-      </BurgerNav>
-      {/* </RemoveScroll> */}
+          <a href="#"> Contag us </a>{" "}
+        </li>{" "}
+      </BurgerNav>{" "}
+      {/* </RemoveScroll> */}{" "}
     </Container>
   );
 }
