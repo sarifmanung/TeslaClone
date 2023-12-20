@@ -5,11 +5,12 @@ import CloseIcon from "@material-ui/icons/Close";
 import { useSelector } from "react-redux";
 // import { RemoveScroll } from 'react-remove-scroll/UI'
 
-import { selectCars } from "../features/car/carSlice";
+import { selectCars, selectCarsUrl } from "../features/car/carSlice";
 
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
   const cars = useSelector(selectCars);
+  const carsUrl = useSelector(selectCarsUrl);
 
   const changeBurgerStatus = () => {
     setBurgerStatus(!burgerStatus);
@@ -26,7 +27,7 @@ function Header() {
         {" "}
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <a key={index} href={carsUrl[index]}>
               {" "}
               {car}{" "}
             </a>
